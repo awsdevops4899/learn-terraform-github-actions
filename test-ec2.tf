@@ -4,7 +4,7 @@
 
 resource "aws_instance" "example" {
     ami           = "ami-0731becbf832f281e" # Replace with your desired AMI ID
-    instance_type = "t2.micro" # Replace with your desired instance type
+    instance_type = "t2.medium" # Replace with your desired instance type
     tags = {
         Name = "cicd-ec2-test-instance"
     }
