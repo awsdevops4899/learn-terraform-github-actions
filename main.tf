@@ -121,3 +121,8 @@ output "SecurityGroupID" {
 output "RoleARN" {
   value = aws_iam_role.ec2_iam_role.arn
 }
+
+module "ebs_cleanup_lambda" {
+  source = "./ebs_cleanup_lambda"
+  aws_region = "us-east-1"
+}
